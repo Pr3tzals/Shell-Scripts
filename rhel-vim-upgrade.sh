@@ -41,7 +41,7 @@ sudo git clone https://github.com/vim/vim.git
 
 cd vim
 
-sudo chown -R "$USER:$USER" .
+sudo chown -R "$(id -un):$(id -gn)" .
 
 echo
 echo "=== Cleaning previous build artifacts ==="
